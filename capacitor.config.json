@@ -1,0 +1,9 @@
+{
+  "appId": "jp.sakkyoku.voicedaw",
+  "appName": "Voice DAW",
+  "webDir": "www",
+  "backgroundColor": "#0b0f16",
+  "android": {
+    "allowMixedContent": false
+  }
+}

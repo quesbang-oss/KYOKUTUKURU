@@ -1,0 +1,27 @@
+{
+  "name": "voice-daw",
+  "version": "1.0.0",
+  "description": "声を録音して楽器にし、GarageBand風に作曲してMP3で書き出せるスマホ向け作曲アプリ（Android APK / Capacitor）",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node scripts/selftest.mjs",
+    "build": "node scripts/build.mjs",
+    "sync": "node scripts/build.mjs && cap sync android",
+    "apk": "node scripts/build.mjs && cap sync android && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/share": "^8.0.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.0"
+  }
+}
